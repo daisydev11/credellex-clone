@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+
+.header{
+    background: linear-gradient(to right, #00081c, #001a5a); 
+    width: 100%;
+    height: 400px;
+}
+
+.navbar{
+    padding: 15px 40px;
+    margin-left: 880px;
+    margin-top: -53px; 
+}
+
+.logo{
+    width: 100px;
+    height: 40;
+    /* margin: 10px; */
+    margin-left: 400px;
+    margin-top: 15px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 18px; 
+    margin: 0;
+    padding: 0;  
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 8px;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+#headText{
+    color: white;
+    font-size: 30px;
+    font-family: "Lato", sans-serif;
+    font-weight: 800;
+    margin-left: 400px;
+    margin-top: 70px;
+}
+
+#below_headText{
+    color: white;
+    font-size: 10px;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    margin-left: 400px;
+    margin-top: 10px;
+}
+
+.playstore{
+    width: 100px;
+    height: 3;
+    margin-left: 400px;
+    margin-top: 20px;
+}
+ 
+.appstore{
+    width: 100px;
+    height: 30px;
+    margin-left: 8px;
+    margin-top: -50px;
+}
+
+#heroImage{
+    width: 350px;
+    height: 350px;
+    margin-left: 780px;
+    margin-top: -225px;
+}
+
+/* Section 2 */
+.features-section{
+    width: 50%;
+    height: 450px;
+    background-image: linear-gradient(135deg, #1448b9 50%, #0f2b70);
+    border-radius: 30px;
+    margin-left: 380px;
+    margin-top: 59px;
+}
+
+.features-button{
+  background-color: rgb(111, 111, 196);
+  border-radius: 5px;
+  width: 45px;
+  height: 20px;
+  color: white;
+  margin: 30px;
+}
+
+.features-button p{
+    font-size: 8px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    padding: 6px;
+}
+
+
+.feature-item{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.feature-circle{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.feature-text h4 {
+    font-size: 10px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    color: white;
+  }
+
+  .feature-text p{
+    font-size: 8px;
+    line-height: 1.5;
+    font-weight: 750;
+    color: #d1d5db;
+  }
+
+  .try-now{
+    font-size: 8px;
+    color: #d1d5db;
+    margin-top: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .try-now::after {
+      content: '\2192';
+      margin-left: 0.3rem;
+      font-weight: bold;
+    }
+
+
+  .features-content{
+    max-width: 55%;
+  }
+
+  .features-content h2{
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 550;
+    color: white;
+    margin-bottom: 1rem;
+    margin-left: 40px;
+    margin-top: 35px;
+  }
+
+  .flex-features{
+    flex: 0 0 calc(50% - 10px);
+    display: flex;
+  }
+
+  .iphone-14-mockup{
+    width: 260px;
+    height: 430px;
+    margin-left: 501px;
+    margin-top: -380px;
+  }
+
+  #feature-item-1{
+    margin-left: 60px;
+  }
+  #feature-item-2{
+    margin-right: -100px;
+  }
+
+  #feature-item-3{
+    margin-left: 40px;
+  }
+
+/* Section 3 */
+.benefit-section{
+  background-color: rgb(3, 3, 47);
+  width: 100%;
+  height: 330px;
+  margin-top: 60px;
+}
+.benefits-btn{
+    background-color: rgb(74, 74, 166);
+    border-radius: 6px;
+    width: 42px;
+    height: 22px;
+    color: white;
+    font-size: 9px;
+    margin: 50px;
+    margin-left: 700px;
+    border: none;
+    font-family: "Lato", sans-serif;
+}
+
+.benefits-btn:hover{
+  transform: scale(1.05);
+}
+
+#why-choose-credellex{
+  color: white;
+  font-family: "Lato", sans-serif;
+  margin-left: 600px;
+  margin-top: -30px;
+
+}
+
+.cards{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card{
+  background-color: #0c1e5b;
+  border-radius: 8px;
+  padding: 20px;
+  width: 200px;
+  height: 160px;
+  color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s;
+}
+
+.card h3{
+  font-family: "Lato", sans-serif;
+  font-size: 11px;
+  margin: 10px 0 8px;
+  font-weight: 700;
+}
+
+.card p{
+  font-family: "Lato", sans-serif;
+  font-size: 9px;
+}
+
+.icon{
+  /* font-size: 10px; */
+  width: 35px;
+  height: 35px;
+}
+
+/* Card tilt variations */
+.rotate-left {
+  transform: rotate(4deg);
+}
+.rotate-slight-left {
+  transform: rotate(-3deg);
+}
+.rotate-slight-right {
+  transform: rotate(4deg);
+}
+.rotate-right {
+  transform: rotate(-3deg);
+}
+
+/* Optional hover effect */
+.card:hover {
+  transform: scale(1.05);
+}
+  /* Section 4 */
+  .get-started{
+    display: flex;
+  }
+.get-started-image{
+  width: 350px;
+  height: 350px;
+  margin-left: 400px;
+  margin-top: 60px;
+}
+
+.get-started-btn{
+  background-color: rgb(98, 98, 159);
+  border-radius: 4px;
+  width: 70px;
+  height: 20px;
+  color: white;
+  font-size: 8px;
+  margin-left: 15px;
+  margin-top: 82px;
+  border: none;
+}
+
+.get-started-text h3{
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.steps-flex{
+  display: flex;
+}
+
+.steps-icon{
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.steps-text{
+  margin-left: 15px;
+}
+.steps-text h3{
+  font-weight: 600;
+  font-size: 10px;
+  font-family: "Lato", sans-serif;
+  margin-top: 15px;
+  margin-left: -2px;
+}
+.steps-text h3:hover{
+  color: rgb(98, 98, 159);
+}
+.steps-text p{
+  font-weight: 400;
+  font-size: 8px;
+  font-family: "Lato", sans-serif;
+  margin-top: 2px;
+}
+
+.flex-buttons{
+  display: flex;
+}
+
+.playstore-2{
+    width: 95px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.appstore-2{
+    width: 95px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+/*  */
