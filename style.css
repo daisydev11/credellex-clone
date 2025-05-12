@@ -88,7 +88,7 @@ body {
 /* Section 2 */
 .features-section{
     width: 50%;
-    height: 450px;
+    height: 420px;
     background-image: linear-gradient(135deg, #1448b9 50%, #0f2b70);
     border-radius: 30px;
     margin-left: 380px;
@@ -101,15 +101,17 @@ body {
   width: 45px;
   height: 20px;
   color: white;
-  margin: 30px;
+  border: none;
+  margin-left: 40px;
+  font-size: 8px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  padding: 6px;
+  margin-top: 30px;
+  /* padding-bottom: 10px; */
 }
 
-.features-button p{
-    font-size: 8px;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    padding: 6px;
-}
+
 
 
 .feature-item{
@@ -171,7 +173,7 @@ body {
     color: white;
     margin-bottom: 1rem;
     margin-left: 40px;
-    margin-top: 35px;
+    /* margin-top: 30px; */
   }
 
   .flex-features{
@@ -417,6 +419,68 @@ body {
   word-spacing: 2px;
 }
 
+.flex-links{
+  display: flex;
+  margin-top: 20px;
+  margin-left: 500px;
+  margin-top: -60px;
+  gap: 20px;
+}
+
+.link-container1 h5{
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 10px;
+}
+.link-container1 h6{
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 8px;
+  margin-top: 5px;
+}
+
+.link-container2 h5{
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 10px;
+}
+.link-container2 h6{
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 8px;
+  margin-top: 5px;
+}
+
+.link-container3 h5{
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 10px;
+}
+.link-container3 h6{
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 8px;
+  margin-top: 5px;
+}
+
+.link-container4 h5{
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 10px;
+}
+.link-container4 h6{
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 8px;
+  margin-top: 5px;
+}
+
+.social-icon{
+  gap: 10px;
+  /* margin-left: 2px; */
+  width: 30px;
+  height: 30px;
+}
 .credellex-text{
   margin-top: 20px;
   width: 100%;
