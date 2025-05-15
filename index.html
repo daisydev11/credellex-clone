@@ -6,217 +6,240 @@
     <title>Credellex</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
 </head>
 <body>
     <!-- Header section -->
-    <div class= "header">
-        <!-- Nav bar -->
-    <div class="nav_logo">
-        <img src="./Images/credellex-white-logo (1).png" alt="Credellex logo" class="logo">
-        <nav class="navbar">
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">FAQs</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Contact us</a></li>
-            </ul>
-        </nav>
+    <div class="header">
+        <div class="container">
+            <!-- Nav bar -->
+            <div class="nav_logo">
+                <img src="./Images/credellex-white-logo (1).png" alt="Credellex logo" class="logo">
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav class="navbar">
+                    <ul class="nav-links" id="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="header-content">
+                <div class="header-text">
+                    <p id="headText">The secure way to buy and sell.</p>
+                    <p id="below_headText">Credellex guarantees security for buyers and sellers. Conduct your transactions with confidence.</p>
+                    <div class="download-buttons">
+                        <img src="./Images/play-store-download-button (1).png" alt="Get it on Google Play" class="playstore">
+                        <img src="./Images/app-store-download-button (1).png" alt="Download on the App Store" class="appstore">
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <img src="./Images/hero-image (1).png" alt="Credellex app hero image" id="heroImage">
+                </div>
+            </div>
+        </div>
     </div>
-        <p id="headText">The secure way to <br>buy and sell.</p>
-        <p id="below_headText">Credellex guarantees security for buyers and sellers. Conduct <br> your transactions with confidence.</p>
-       <div>
-        <img src="./Images/play-store-download-button (1).png" alt="" class="playstore">
-        <img src="./Images/app-store-download-button (1).png" alt="" class="appstore">
-       </div>
-        <img src="./Images/hero-image (1).png" alt="" id="heroImage">
-    </div>
-    <!-- Section 2 -->
+
+    <!-- Features section -->
     <section class="features-section">
-        <div class="features-content">
-          <!-- Features button -->
-          <button class="features-button">Features</button>
-          <h2>Everything you need is right here.</h2>
+        <div class="features-section-inner">
+            <div class="features-content">
+                <!-- Features button -->
+                <button class="features-button">Features</button>
+                <h2>Everything you need is right here.</h2>
 
-       <div class="flex-features">
-          <div class="feature-item" id="feature-item-1">
-            <div class="feature-circle"></div>
-            <div class="feature-text">
-              <h4>Escrow services</h4>
-              <p>Protect your transactions with ease. <br> Our escrow feature ensures funds are <br>held securely until both parties confirm <br>the transaction is complete. This <br> creates a layer of trust and reliability <br>for every deal.</p>
-              <div class="try-now">Try it now</div>
-            </div>
-          </div>
-    
-          <div class="feature-item" id="feature-item-2">
-            <div class="feature-circle"></div>
-            <div class="feature-text">
-              <h4>Personalized Payment <br> Convenience</h4>
-              <p>Say goodbye to payment hassles. We <br> provide you with a permanent virtual <br>account number for receiving funds <br>directly—anytime, anywhere. Whether <br> you’re making payments for goods or <br> services, it’s all streamlined and <br>straightforward for your convenience.</p>
-              <div class="try-now">Try it now</div>
-            </div>
-          </div>
-       </div>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-circle"></div>
+                        <div class="feature-text">
+                            <h4>Escrow services</h4>
+                            <p>Protect your transactions with ease. Our escrow feature ensures funds are held securely until both parties confirm the transaction is complete. This creates a layer of trust and reliability for every deal.</p>
+                            <div class="try-now">Try it now</div>
+                        </div>
+                    </div>
 
-      <div class="flex-features" id="feature-item-1">
-          <div class="feature-item">
-            <div class="feature-circle"></div>
-            <div class="feature-text">
-              <h4>Instant transfers</h4>
-              <p>Need to send money? Do it in a flash! Transfer funds to friends, family, or business partners in seconds. Enjoy seamless transfers within the app without the fuss of traditional processes.
-              <div class="try-now">Try it now</div>
+                    <div class="feature-item">
+                        <div class="feature-circle"></div>
+                        <div class="feature-text">
+                            <h4>Personalized Payment Convenience</h4>
+                            <p>Say goodbye to payment hassles. We provide you with a permanent virtual account number for receiving funds directly—anytime, anywhere. Whether you're making payments for goods or services, it's all streamlined and straightforward for your convenience.</p>
+                            <div class="try-now">Try it now</div>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-circle"></div>
+                        <div class="feature-text">
+                            <h4>Instant transfers</h4>
+                            <p>Need to send money? Do it in a flash! Transfer funds to friends, family, or business partners in seconds. Enjoy seamless transfers within the app without the fuss of traditional processes.</p>
+                            <div class="try-now">Try it now</div>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-circle"></div>
+                        <div class="feature-text">
+                            <h4>Simplified Bill Payments</h4>
+                            <p>Take care of essentials effortlessly. Pay for airtime, data, utilities, cable TV subscriptions, and electricity all in one place—without the hassle of navigating multiple platforms.</p>
+                            <div class="try-now">Try it now</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-    
-          <div class="feature-item" id="feature-item-3">
-            <div class="feature-circle"></div>
-            <div class="feature-text">
-              <h4>Simplified Bill Payments</h4>
-              <p>Take care of essentials effortlessly. Pay for airtime, data, utilities, cable TV subscriptions, and electricity all in one place—without the hassle of navigating multiple platforms.
-              <div class="try-now">Try it now</div>
+
+            <div class="features-image">
+                <img src="./Images/iphone-14-mockup (1).png" alt="App interface" class="iphone-14-mockup">
             </div>
-          </div>
         </div>
-        <div class="features-image">
-          <img src="./Images/iphone-14-mockup (1).png" alt="App interface" class="iphone-14-mockup">
+    </section>
+
+    <!-- Benefits section -->
+    <div class="benefit-section">
+        <div class="container">
+            <button class="benefits-btn">Benefits</button>
+            <h2 id="why-choose-credellex">Why choose Credellex?</h2>
+
+            <div class="cards">
+                <div class="card rotate-left">
+                    <div><img src="./Images/padlock-icon (1).png" alt="Security icon" class="icon"></div>
+                    <h3>Security</h3>
+                    <p>Rest easy knowing your money and goods are protected in every transaction.</p>
+                </div>
+
+                <div class="card rotate-slight-left">
+                    <div><img src="./Images/lightning-icon (1).png" alt="Speed icon" class="icon"></div>
+                    <h3>Speed</h3>
+                    <p>Enjoy the power of instant settlements, making your transactions lightning-fast.</p>
+                </div>
+
+                <div class="card rotate-slight-right">
+                    <div><img src="./Images/pule-icon (1).png" alt="Seamless icon" class="icon"></div>
+                    <h3>Seamless</h3>
+                    <p>Effortless processes designed to keep things simple for everyone.</p>
+                </div>
+
+                <div class="card rotate-right">
+                    <div><img src="./Images/dollar-icon (1).png" alt="Service icon" class="icon"></div>
+                    <h3>Service</h3>
+                    <p>Expert customer care, always putting your needs and protection first.</p>
+                </div>
+            </div>
         </div>
-      </div> 
-      </section>
+    </div>
 
-      <!-- Section 3 -->
-       <div class="benefit-section">
-        <button class="benefits-btn">Benefits</button>
+    <!-- Getting started section -->
+    <div class="container">
+        <div class="get-started">
+            <img src="./Images/Screenshot 2025-05-11 212449.png" alt="Getting started with Credellex" class="get-started-image">
 
-        <h2 id="why-choose-credellex">Why choose Credellex?</h2>
+            <div class="get-started-content">
+                <button class="get-started-btn">Getting started</button>
+                <h3>How to get started with Credellex?</h3>
+                
+                <div class="steps-flex">
+                    <img src="./Images/1-circle (1).png" alt="Step 1" class="steps-icon">
+                    <div class="steps-text">
+                        <h3>Sign up for free</h3>
+                        <p>Create your Credellex account in minutes. Simply provide your email address and choose a secure password.</p>
+                    </div>
+                </div>
 
-        <div class="cards">
-          <div class="card rotate-left">
-            <div ><img src="./Images/padlock-icon (1).png" alt="" class="icon"></div>
-            <h3>Security</h3>
-            <p>Rest easy knowing your money and <br>goods are protected in every <br> transaction.</p>
-          </div>
+                <div class="steps-flex">
+                    <img src="./Images/2-circle (1).png" alt="Step 2" class="steps-icon">
+                    <div class="steps-text">
+                        <h3>Complete your profile</h3>
+                        <p>Share additional details about yourself. We'll assist you in creating your profile and confirming your information.</p>
+                    </div>
+                </div>
 
-          <div class="card rotate-slight-left">
-            <div ><img src="./Images/lightning-icon (1).png" alt="" class="icon"></div>
-            <h3>Speed</h3>
-            <p>Enjoy the power of instant settlements, making your transactions lightning-fast.</p>
-          </div>
-
-          <div class="card rotate-slight-right">
-            <div><img src="./Images/pule-icon (1).png" alt="" class="icon"></div>
-            <h3>Seamless</h3>
-            <p>Effortless processes designed to keep things simple for everyone.</p>
-          </div>
-
-          <div class="card rotate-right">
-            <div><img src="./Images/dollar-icon (1).png" alt="" class="icon"></div>
-            <h3>Service</h3>
-            <p>Expert customer care, always putting your needs and protection first.</p>
-          </div>
+                <div class="steps-flex">
+                    <img src="./Images/3-circle (1).png" alt="Step 3" class="steps-icon">
+                    <div class="steps-text">
+                        <h3>Start managing your finances</h3>
+                        <p>Once your profile is set up, you're good to go - collect your payments, earn rewards and transform the way you do business.</p>
+                    </div>
+                </div>
+                
+                <div class="flex-buttons">
+                    <img src="./Images/play-store-download-button (1).png" alt="Get it on Google Play" class="playstore-2">
+                    <img src="./Images/app-store-download-button (1).png" alt="Download on the App Store" class="appstore-2">
+                </div>
+            </div>
         </div>
-       </div>
+    </div>
 
-       <!-- Section 4 -->
-      <div class="get-started">
-        <img src="./Images/Screenshot 2025-05-11 212449.png" alt="" class="get-started-image">
+    <!-- Footer section -->
+    <div class="footer">
+        <div class="footer-content">
+            <h2 class="footer-header">Download the Credellex app now and start enjoying secure, fast, and reliable financial services.</h2>
 
-        <div class="get-started-text">
-          <button class="get-started-btn">Getting started</button>
-          <h3 class="">How to get started with <br> Credellex?</h3>
-          
-      <div class="steps-flex">
-        <img src="./Images/1-circle (1).png" alt="" class="steps-icon">
-
-        <div class="steps-text">
-          <h3>Sign up for free</h3>
-          <p>Create your Credellex account in minutes. <br> Simply provide your email address and choose a <br>secure password.</p>
-        </div>
-      </div>
-
-      <div class="steps-flex">
-        <img src="./Images/2-circle (1).png" alt="" class="steps-icon">
-
-        <div class="steps-text">
-          <h3>Complete your profile</h3>
-          <p>Share additional details about yourself. We'll <br>assist you in creating your profile and <br>confirming your information.</p>
-        </div>
-      </div>
-
-      <div class="steps-flex">
-        <img src="./Images/3-circle (1).png" alt="" class="steps-icon">
-
-        <div class="steps-text">
-          <h3>Start managing your finances</h3>
-          <p>Once your profile is set up, you're good to go - <br>collect your payments, earn rewards and <br> transform the way you do business.</p>
-        </div>
-      </div> 
-         <div class="flex-buttons">
-            <img src="./Images/play-store-download-button (1).png" alt="" class="playstore-2">
-            <img src="./Images/app-store-download-button (1).png" alt="" class="appstore-2">
-          </div>
-      </div>
-      </div>
-
-  <!-- Footer section -->
-   <div class="footer">
-      <h2 class="footer-header">Download the Credellex app now and <br>start enjoying secure, fast, and reliable <br>financial services.</h2>
-
-      <div>
-        <img src="./Images/play-store-download-button (1).png" alt="" class="playstore-3">
-        <img src="./Images/app-store-download-button (1).png" alt="" class="appstore-3">
-
-        <div class="inner-card">
-          <div>
-            <img src="./Images/credellex-white-logo (1).png" alt="" class="logo-2">
-            <p class="footer-text">Credellex is a finance platform where you can <br>enjoy secure, fast, and reliable financial <br>services.</p>
-          </div>
-
-          <div class="flex-links">
-            <div class="link-container1">
-              <h5>Quick links</h5>
-              <h6>Home</h6>
-              <h6>blog</h6>
+            <div class="footer-download">
+                <img src="./Images/play-store-download-button (1).png" alt="Get it on Google Play" class="playstore-3">
+                <img src="./Images/app-store-download-button (1).png" alt="Download on the App Store" class="appstore-3">
             </div>
 
-            <div class="link-container2">
-              <h5>Legal</h5>
-              <h6>Terms</h6>
-              <h6>Privacy</h6>
-              <h6>Dispute</h6>
+            <div class="inner-card">
+                <div class="footer-info">
+                    <div class="footer-brand">
+                        <img src="./Images/credellex-white-logo (1).png" alt="Credellex logo" class="logo-2">
+                        <p class="footer-text">Credellex is a finance platform where you can enjoy secure, fast, and reliable financial services.</p>
+                    </div>
+
+                    <div class="footer-links">
+                        <div class="link-container">
+                            <h5>Quick links</h5>
+                            <h6>Home</h6>
+                            <h6>Blog</h6>
+                        </div>
+
+                        <div class="link-container">
+                            <h5>Legal</h5>
+                            <h6>Terms</h6>
+                            <h6>Privacy</h6>
+                            <h6>Dispute</h6>
+                        </div>
+
+                        <div class="link-container">
+                            <h5>Company</h5>
+                            <h6>About us</h6>
+                            <h6>FAQ</h6>
+                            <h6>Blog</h6>
+                        </div>
+
+                        <div class="link-container">
+                            <h5>Support</h5>
+                            <h6>Contact</h6>
+                            <h6>Blog</h6>
+                        </div>
+
+                        <div class="social-icons">
+                            <img src="./Images/linkedin.png" alt="LinkedIn" class="social-icon">
+                            <img src="./Images/instagram.png" alt="Instagram" class="social-icon">
+                            <img src="./Images/facebook.png" alt="Facebook" class="social-icon">
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="link-container3">
-              <h5>Company</h5>
-              <h6>About us</h6>
-              <h6>FAQ</h6>
-              <h6>Blog</h6>
-            </div>
-
-            <div class="link-container4">
-              <h5>Support</h5>
-              <h6>Contact</h6>
-              <h6>blog</h6>
-            </div>
-
-            <div>
-              <img src="./Images/linkedin.png" alt="" class="social-icon">
-              <img src="./Images/instagram.png" alt="" class="social-icon">
-              <img src="./Images/facebook.png" alt="" class="social-icon">
-            </div>
-          </div>
+            <img src="./Images/credellex-text (1).png" alt="Credellex" class="credellex-text">
         </div>
-      </div>
+    </div>
 
-        <img src="./Images/credellex-text (1).png" alt="" class="credellex-text">
-   </div>
+    <!-- JavaScript for mobile menu toggle -->
+    <script>
+        document.getElementById('mobile-menu').addEventListener('click', function() {
+            document.getElementById('nav-links').classList.toggle('active');
+        });
+    </script>
 </body>
-    
-  
-        
-
 </html>
 
 

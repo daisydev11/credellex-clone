@@ -1,4 +1,5 @@
-*{
+/* Base Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,483 +7,672 @@
 
 body {
     margin: 0;
-    font-family: sans-serif;
-  }
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
 
-.header{
-    background: linear-gradient(to right, #00081c, #001a5a); 
+/* Container for content alignment */
+.container {
     width: 100%;
-    height: 400px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.navbar{
-    padding: 15px 40px;
-    margin-left: 880px;
-    margin-top: -53px; 
+/* Header Section */
+.header {
+    background: linear-gradient(to right, #00081c, #001a5a);
+    width: 100%;
+    padding: 40px 0 60px;
+    position: relative;
+    overflow: hidden;
 }
 
-.logo{
+.nav_logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    flex-wrap: wrap;
+}
+
+.logo {
     width: 100px;
-    height: 40;
-    /* margin: 10px; */
-    margin-left: 400px;
-    margin-top: 15px;
+    height: auto;
 }
 
-.nav-links{
+.navbar {
+    padding: 15px 0;
+}
+
+.nav-links {
     list-style: none;
     display: flex;
-    gap: 18px; 
+    gap: 18px;
     margin: 0;
-    padding: 0;  
+    padding: 0;
 }
 
 .nav-links li a {
     color: white;
     text-decoration: none;
-    font-size: 8px;
-    font-family: "Lato", sans-serif;
+    font-size: 14px;
     font-weight: 500;
-    font-style: normal;
-  }
+    transition: color 0.3s ease;
+}
 
-#headText{
+.nav-links li a:hover {
+    color: #ccc;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
     color: white;
-    font-size: 30px;
-    font-family: "Lato", sans-serif;
+    font-size: 24px;
+}
+
+.header-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 5%;
+}
+
+.header-text {
+    flex: 1;
+    max-width: 500px;
+    margin-right: 20px;
+}
+
+#headText {
+    color: white;
+    font-size: 2.5rem;
     font-weight: 800;
-    margin-left: 400px;
-    margin-top: 70px;
+    margin-bottom: 20px;
+    line-height: 1.2;
 }
 
-#below_headText{
+#below_headText {
     color: white;
-    font-size: 10px;
-    font-family: "Lato", sans-serif;
+    font-size: 1rem;
     font-weight: 300;
-    margin-left: 400px;
-    margin-top: 10px;
+    margin-bottom: 30px;
+    line-height: 1.5;
 }
 
-.playstore{
-    width: 100px;
-    height: 3;
-    margin-left: 400px;
-    margin-top: 20px;
-}
- 
-.appstore{
-    width: 100px;
-    height: 30px;
-    margin-left: 8px;
-    margin-top: -50px;
+.download-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
 }
 
-#heroImage{
-    width: 350px;
-    height: 350px;
-    margin-left: 780px;
-    margin-top: -225px;
+.playstore, .appstore {
+    width: 140px;
+    height: auto;
+    transition: transform 0.3s ease;
 }
 
-/* Section 2 */
-.features-section{
-    width: 50%;
-    height: 420px;
+.playstore:hover, .appstore:hover {
+    transform: scale(1.05);
+}
+
+.hero-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#heroImage {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+/* Features Section */
+.features-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 60px auto;
     background-image: linear-gradient(135deg, #1448b9 50%, #0f2b70);
     border-radius: 30px;
-    margin-left: 380px;
-    margin-top: 59px;
+    padding: 40px 20px;
+    position: relative;
+    overflow: hidden;
 }
 
-.features-button{
-  background-color: rgb(111, 111, 196);
-  border-radius: 5px;
-  width: 45px;
-  height: 20px;
-  color: white;
-  border: none;
-  margin-left: 40px;
-  font-size: 8px;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  padding: 6px;
-  margin-top: 30px;
-  /* padding-bottom: 10px; */
-}
-
-
-
-
-.feature-item{
+.features-section-inner {
     display: flex;
-    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.feature-circle{
-    width: 25px;
-    height: 25px;
+.features-content {
+    flex: 1;
+    min-width: 300px;
+    padding-right: 20px;
+}
+
+.features-button {
+    background-color: rgb(111, 111, 196);
+    border-radius: 5px;
+    padding: 8px 16px;
+    color: white;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 400;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.features-content h2 {
+    font-size: 1.8rem;
+    font-weight: 550;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.feature-item {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.feature-circle {
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 1rem;
+    margin-right: 15px;
     flex-shrink: 0;
 }
 
 .feature-text h4 {
-    font-size: 10px;
-    font-family: "Lato", sans-serif;
+    font-size: 1.1rem;
     font-weight: 700;
-    margin-bottom: 0.3rem;
+    margin-bottom: 10px;
     color: white;
-  }
+}
 
-  .feature-text p{
-    font-size: 8px;
+.feature-text p {
+    font-size: 0.9rem;
     line-height: 1.5;
-    font-weight: 750;
+    font-weight: 400;
     color: #d1d5db;
-  }
+    margin-bottom: 10px;
+}
 
-  .try-now{
-    font-size: 8px;
+.try-now {
+    font-size: 0.9rem;
     color: #d1d5db;
-    margin-top: 0.5rem;
     display: inline-flex;
     align-items: center;
     cursor: pointer;
-  }
-
-  .try-now::after {
-      content: '\2192';
-      margin-left: 0.3rem;
-      font-weight: bold;
-    }
-
-
-  .features-content{
-    max-width: 55%;
-  }
-
-  .features-content h2{
-    font-size: 16px;
-    font-family: "Lato", sans-serif;
-    font-weight: 550;
-    color: white;
-    margin-bottom: 1rem;
-    margin-left: 40px;
-    /* margin-top: 30px; */
-  }
-
-  .flex-features{
-    flex: 0 0 calc(50% - 10px);
-    display: flex;
-  }
-
-  .iphone-14-mockup{
-    width: 260px;
-    height: 430px;
-    margin-left: 501px;
-    margin-top: -380px;
-  }
-
-  #feature-item-1{
-    margin-left: 60px;
-  }
-  #feature-item-2{
-    margin-right: -100px;
-  }
-
-  #feature-item-3{
-    margin-left: 40px;
-  }
-
-/* Section 3 */
-.benefit-section{
-  background-color: rgb(3, 3, 47);
-  width: 100%;
-  height: 330px;
-  margin-top: 60px;
+    transition: color 0.3s ease;
 }
-.benefits-btn{
+
+.try-now:hover {
+    color: white;
+}
+
+.try-now::after {
+    content: '\2192';
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+.features-image {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iphone-14-mockup {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+}
+
+/* Benefits Section */
+.benefit-section {
+    background-color: rgb(3, 3, 47);
+    width: 100%;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.benefits-btn {
     background-color: rgb(74, 74, 166);
     border-radius: 6px;
-    width: 42px;
-    height: 22px;
+    padding: 8px 16px;
     color: white;
-    font-size: 9px;
-    margin: 50px;
-    margin-left: 700px;
+    font-size: 0.9rem;
     border: none;
     font-family: "Lato", sans-serif;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
 }
 
-.benefits-btn:hover{
-  transform: scale(1.05);
+.benefits-btn:hover {
+    transform: scale(1.05);
 }
 
-#why-choose-credellex{
-  color: white;
-  font-family: "Lato", sans-serif;
-  margin-left: 600px;
-  margin-top: -30px;
-
+#why-choose-credellex {
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 40px;
 }
 
-.cards{
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 30px;
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.card{
-  background-color: #0c1e5b;
-  border-radius: 8px;
-  padding: 20px;
-  width: 200px;
-  height: 160px;
-  color: white;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
-  transition: transform 0.3s;
+.card {
+    background-color: #0c1e5b;
+    border-radius: 12px;
+    padding: 25px;
+    width: 250px;
+    color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s;
+    margin-bottom: 20px;
 }
 
-.card h3{
-  font-family: "Lato", sans-serif;
-  font-size: 11px;
-  margin: 10px 0 8px;
-  font-weight: 700;
+.card h3 {
+    font-family: "Lato", sans-serif;
+    font-size: 1.2rem;
+    margin: 15px 0 10px;
+    font-weight: 700;
 }
 
-.card p{
-  font-family: "Lato", sans-serif;
-  font-size: 9px;
+.card p {
+    font-family: "Lato", sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
 }
 
-.icon{
-  /* font-size: 10px; */
-  width: 35px;
-  height: 35px;
+.icon {
+    width: 50px;
+    height: 50px;
 }
 
 /* Card tilt variations */
 .rotate-left {
-  transform: rotate(4deg);
+    transform: rotate(2deg);
 }
 .rotate-slight-left {
-  transform: rotate(-3deg);
+    transform: rotate(-1deg);
 }
 .rotate-slight-right {
-  transform: rotate(4deg);
+    transform: rotate(1deg);
 }
 .rotate-right {
-  transform: rotate(-3deg);
+    transform: rotate(-2deg);
 }
 
 /* Optional hover effect */
 .card:hover {
-  transform: scale(1.05);
+    transform: scale(1.05) rotate(0);
 }
-  /* Section 4 */
-  .get-started{
+
+/* Getting Started Section */
+.get-started {
     display: flex;
-  }
-.get-started-image{
-  width: 350px;
-  height: 350px;
-  margin-left: 400px;
-  margin-top: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    gap: 40px;
 }
 
-.get-started-btn{
-  background-color: rgb(98, 98, 159);
-  border-radius: 4px;
-  width: 70px;
-  height: 20px;
-  color: white;
-  font-size: 8px;
-  margin-left: 15px;
-  margin-top: 82px;
-  border: none;
+.get-started-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 }
 
-.get-started-text h3{
-  font-weight: 600;
-  font-size: 16px;
-  font-family: "Lato", sans-serif;
-  margin-top: 15px;
-  margin-left: 10px;
+.get-started-content {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
 }
 
-.steps-flex{
-  display: flex;
+.get-started-btn {
+    background-color: rgb(98, 98, 159);
+    border-radius: 4px;
+    padding: 8px 16px;
+    color: white;
+    font-size: 0.9rem;
+    border: none;
+    margin-bottom: 20px;
+    cursor: pointer;
 }
 
-.steps-icon{
-  width: 40px;
-  height: 40px;
-  margin-top: 20px;
-  margin-left: 15px;
+.get-started-content h3 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
 }
 
-.steps-text{
-  margin-left: 15px;
-}
-.steps-text h3{
-  font-weight: 600;
-  font-size: 10px;
-  font-family: "Lato", sans-serif;
-  margin-top: 15px;
-  margin-left: -2px;
-}
-.steps-text h3:hover{
-  color: rgb(98, 98, 159);
-}
-.steps-text p{
-  font-weight: 400;
-  font-size: 8px;
-  font-family: "Lato", sans-serif;
-  margin-top: 2px;
+.steps-flex {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
 }
 
-.flex-buttons{
-  display: flex;
+.steps-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    flex-shrink: 0;
 }
 
-.playstore-2{
-    width: 95px;
-    height: 30px;
+.steps-text h3 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.steps-text h3:hover {
+    color: rgb(98, 98, 159);
+}
+
+.steps-text p {
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.flex-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.playstore-2, .appstore-2 {
+    width: 140px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.playstore-2:hover, .appstore-2:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Section */
+.footer {
+    background: linear-gradient(to bottom, #03123c, #0c2c7d);
+    width: 100%;
+    padding: 60px 20px;
+    color: white;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-header {
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+.footer-download {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.playstore-3, .appstore-3 {
+    width: 140px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.playstore-3:hover, .appstore-3:hover {
+    transform: scale(1.05);
+}
+
+.inner-card {
+    background-color: #020d2f;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-brand {
+    flex: 1;
+    min-width: 250px;
+}
+
+.logo-2 {
+    width: 120px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.link-container {
+    min-width: 120px;
+}
+
+.link-container h5 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.link-container h6 {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.link-container h6:hover {
+    color: #ccc;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
     margin-top: 20px;
-    margin-left: 15px;
 }
-.appstore-2{
-    width: 95px;
+
+.social-icon {
+    width: 30px;
     height: 30px;
-    margin-top: 15px;
-    margin-left: 5px;
+    transition: transform 0.3s ease;
 }
 
-/* Footer */
-.footer{
-  background: linear-gradient(to bottom, #03123c, #0c2c7d);
-  width: 100%;
-  height: 590px;
-  margin-top: 60px;
+.social-icon:hover {
+    transform: scale(1.2);
 }
 
-.footer-header{
-  color: white;
-  font-weight: 400;
-  text-align: center;
-  padding-top: 60px;
+.credellex-text {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 40px auto 0;
+    display: block;
 }
 
-.playstore-3{
-    width: 95px;
-    height: 30px;
-    margin-top: 10px;
-    margin-left: 657px;
-}
-.appstore-3{
-    width: 95px;
-    height: 30px;
-    margin-top: 10px;
-    margin-left: 5px;
-}
-
-.inner-card{
-  width: 50%;
-  height: 180px;
-  background-color: #020d2f;
-  border-radius: 20px;
-  margin-top: 35px;
-  margin-left: 370px;
-}
-
-.logo-2{
-  width: 100px;
-  height: 40;
-  margin-left: 15px;
-  margin-top: 40px;
-}
-
-.footer-text{
-  color: white;
-  font-size: 8px;
-  font-family: "Lato", sans-serif;
-  margin-left: 15px;
-  margin-top: 5px;
-  line-height: 10px;
-  word-spacing: 2px;
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    .navbar {
+        width: 100%;
+        margin: 0;
+        padding: 10px 0;
+    }
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+    
+    .nav-links li {
+        margin: 10px 0;
+    }
+    
+    .nav-links li a {
+        font-size: 16px;
+    }
 }
 
-.flex-links{
-  display: flex;
-  margin-top: 20px;
-  margin-left: 500px;
-  margin-top: -60px;
-  gap: 20px;
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    #headText {
+        font-size: 2rem;
+    }
+    
+    .features-content {
+        padding-right: 0;
+    }
+    
+    .features-image {
+        margin-top: 40px;
+    }
+    
+    .card {
+        transform: none !important;
+    }
 }
 
-.link-container1 h5{
-  color: white;
-  font-family: "Lato", sans-serif;
-  font-size: 10px;
-}
-.link-container1 h6{
-  color: white;
-  font-family: "Lato", sans-serif;
-  font-size: 8px;
-  margin-top: 5px;
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .header-text {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    
+    #headText {
+        font-size: 1.8rem;
+    }
+    
+    #below_headText {
+        font-size: 0.9rem;
+    }
+    
+    .download-buttons {
+        justify-content: center;
+    }
+    
+    .features-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .feature-text h4 {
+        font-size: 1rem;
+    }
+    
+    #why-choose-credellex {
+        font-size: 1.5rem;
+    }
+    
+    .get-started-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .footer-header {
+        font-size: 1.5rem;
+    }
+    
+    .inner-card {
+        padding: 20px;
+    }
 }
 
-.link-container2 h5{
-  color: white;
-  font-family: "Lato", sans-serif;
-  font-size: 10px;
-}
-.link-container2 h6{
-  color: white;
-  font-family: "Lato", sans-serif;
-  font-size: 8px;
-  margin-top: 5px;
-}
-
-.link-container3 h5{
-  color: white;
-  font-family: "Lato", sans-serif;
-  font-size: 10px;
-}
-.link-container3 h6{
-  color: white;
-  font-family: "Lato", sans-serif;
-  font-size: 8px;
-  margin-top: 5px;
-}
-
-.link-container4 h5{
-  color: white;
-  font-family: "Lato", sans-serif;
-  font-size: 10px;
-}
-.link-container4 h6{
-  color: white;
-  font-family: "Lato", sans-serif;
-  font-size: 8px;
-  margin-top: 5px;
-}
-
-.social-icon{
-  gap: 10px;
-  /* margin-left: 2px; */
-  width: 30px;
-  height: 30px;
-}
-.credellex-text{
-  margin-top: 20px;
-  width: 100%;
-
+@media (max-width: 576px) {
+    .logo {
+        width: 80px;
+    }
+    
+    #headText {
+        font-size: 1.5rem;
+    }
+    
+    .playstore, .appstore, .playstore-2, .appstore-2, .playstore-3, .appstore-3 {
+        width: 120px;
+    }
+    
+    .feature-item {
+        flex-direction: column;
+    }
+    
+    .feature-circle {
+        margin-bottom: 15px;
+    }
+    
+    .card {
+        width: 100%;
+    }
+    
+    .steps-flex {
+        flex-direction: column;
+    }
+    
+    .steps-icon {
+        margin-bottom: 15px;
+    }
 }
