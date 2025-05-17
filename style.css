@@ -37,7 +37,7 @@ body {
 }
 
 .logo {
-    width: 100px;
+    width: 150px;
     height: auto;
 }
 
@@ -130,6 +130,7 @@ body {
     width: 100%;
     max-width: 400px;
     height: auto;
+    margin-bottom: -100px;
 }
 
 /* Features Section */
@@ -137,7 +138,7 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 60px auto;
-    background-image: linear-gradient(135deg, #1448b9 50%, #0f2b70);
+    background-image: linear-gradient(135deg, #133379 50%, #0f2b70);
     border-radius: 30px;
     padding: 40px 20px;
     position: relative;
@@ -200,7 +201,7 @@ body {
 
 .feature-text h4 {
     font-size: 1.1rem;
-    font-weight: 700;
+    font-weight: 800;
     margin-bottom: 10px;
     color: white;
 }
@@ -208,7 +209,7 @@ body {
 .feature-text p {
     font-size: 0.9rem;
     line-height: 1.5;
-    font-weight: 400;
+    font-weight: 600;
     color: #d1d5db;
     margin-bottom: 10px;
 }
@@ -242,8 +243,9 @@ body {
 
 .iphone-14-mockup {
     width: 100%;
-    max-width: 320px;
+    max-width: 480px;
     height: auto;
+    margin-left: 195px;
 }
 
 /* Benefits Section */
@@ -574,6 +576,20 @@ body {
     .nav-links li a {
         font-size: 16px;
     }
+
+    .features-section {
+    border-radius: 0px;
+    width: 100%;
+    margin-top: -50px;
+}
+
+.iphone-14-mockup {
+    margin-right: 150px;
+}
+
+#heroImage {
+    margin-bottom: -50px;
+
 }
 
 /* Responsive Adjustments */
