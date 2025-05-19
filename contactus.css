@@ -1,4 +1,4 @@
-   * {
+* {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -339,8 +339,12 @@
 
         /* Mobile Responsiveness */
         @media (max-width: 768px) {
-            .menu-toggle {
+            .menu-toggle{
                 display: block;
+            }
+
+            .navbar {
+                position: relative;
             }
 
             .nav-links {
@@ -348,14 +352,25 @@
                 flex-direction: column;
                 position: absolute;
                 top: 100%;
-                left: 0;
-                width: 100%;
+                right: 0;
+                width: 200px;
                 background-color: #001a5a;
                 padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                z-index: 1000;
             }
 
             .nav-links.active {
                 display: flex;
+            }
+
+            .nav-links li {
+                margin-bottom: 10px;
+            }
+
+            .nav-links li:last-child {
+                margin-bottom: 0;
             }
 
             .content {
