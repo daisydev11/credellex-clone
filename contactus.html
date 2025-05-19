@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Credellex</title>
+    <link rel="stylesheet" href="contactus.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="head">
+        <div class="nav-container">
+            <!-- Nav bar -->
+            <div class="nav_logo">
+                <img src="./Images/credellex-white-logo (1).png" alt="Credellex logo" class="logo">
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav class="navbar">
+                    <ul class="nav-links" id="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="aboutus.html">About us</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="header">
+            <h1>Reach out to Us</h1>
+            <p>We're excited that you're interested in learning more about Credellex! Let us know how we<br>
+            can assist you, and we'll reach out shortly.</p>
+        </div>
+
+        <div class="content">
+            <div class="left-side">
+                <div class="talk-to-us">
+                    <h3>Talk to us</h3>
+                    <p>Have an inquiry, or need Customer Service assistance? Call us</p>
+                    
+                    <div class="contact-info">
+                        <a href="mailto:hello@credellex.com" class="contact-button">
+                            Email:<br>hello@credellex.com
+                        </a>
+                        <a href="tel:+2348096748011" class="contact-button">
+                            Call:<br>+2348096748011
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <form>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Enter first name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Enter last name" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <input type="email" class="form-control" placeholder="Enter email address" required>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <input type="tel" class="form-control" placeholder="Enter phone number">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <textarea class="form-control" placeholder="Write a message"></textarea>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="consent" name="consent">
+                        <label for="consent">
+                            By checking this box I give my consent to Credellex using my personal information to send me communications regarding Credellex's products, events, trainings, reports and services
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-content">
+            <h2 class="footer-header">Download the Credellex app now and start enjoying secure, fast, and reliable financial services.</h2>
+
+            <div class="footer-download">
+                <img src="./Images/play-store-download-button (1).png" alt="Get it on Google Play" class="playstore-3">
+                <img src="./Images/app-store-download-button (1).png" alt="Download on the App Store" class="appstore-3">
+            </div>
+
+            <div class="inner-card">
+                <div class="footer-info">
+                    <div class="footer-brand">
+                        <img src="./Images/credellex-white-logo (1).png" alt="Credellex logo" class="logo-2">
+                        <p class="footer-text">Credellex is a finance platform where you can enjoy secure, fast, and reliable financial services.</p>
+                    </div>
+
+                    <div class="footer-links">
+                        <div class="link-container">
+                            <h5>Quick links</h5>
+                            <h6>Home</h6>
+                            <h6>Blog</h6>
+                        </div>
+
+                        <div class="link-container">
+                            <h5>Legal</h5>
+                            <h6>Terms</h6>
+                            <h6>Privacy</h6>
+                            <h6>Dispute</h6>
+                        </div>
+
+                        <div class="link-container">
+                            <h5>Company</h5>
+                            <h6>About us</h6>
+                            <h6>FAQ</h6>
+                            <h6>Blog</h6>
+                        </div>
+
+                        <div class="link-container">
+                            <h5>Support</h5>
+                            <h6>Contact</h6>
+                            <h6>Blog</h6>
+                        </div>
+
+                        <div class="social-icons">
+                            <img src="./Images/linkedin.png" alt="LinkedIn" class="social-icon">
+                            <img src="./Images/instagram.png" alt="Instagram" class="social-icon">
+                            <img src="./Images/facebook.png" alt="Facebook" class="social-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <img src="./Images/credellex-text.png" alt="Credellex" class="credellex-text">
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu').addEventListener('click', function() {
+            document.getElementById('nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
