@@ -395,38 +395,30 @@ body {
         display: block;
     }
     
-    .nav-links {
-        position: absolute;
-        top: 100%;
-        left: 0;
+    .navbar {
         width: 100%;
-        background: linear-gradient(to right, #00081c, #001a5a);
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .nav-links {
+        display: none;
         flex-direction: column;
-        gap: 0;
+        width: 100%;
+        text-align: center;
         padding: 20px 0;
-        border-radius: 0 0 10px 10px;
-        transform: translateY(-100%);
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.3s ease;
-        z-index: 1000;
     }
     
     .nav-links.active {
-        transform: translateY(0);
-        opacity: 1;
-        visibility: visible;
+        display: flex;
     }
     
     .nav-links li {
-        width: 100%;
+        margin: 10px 0;
     }
     
     .nav-links li a {
-        display: block;
-        padding: 12px 30px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        font-size: 14px;
+        font-size: 16px;
     }
     
     .nav-links li:last-child a {
